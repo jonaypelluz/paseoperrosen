@@ -5,9 +5,7 @@ import { type NextPage } from 'next';
 
 const Vacarisses: NextPage = () => {
     return (
-        <MainLayout
-            header={<Header />}
-        >
+        <MainLayout header={<Header />}>
             <Content />
         </MainLayout>
     );

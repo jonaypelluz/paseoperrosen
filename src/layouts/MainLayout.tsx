@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React, { ReactNode } from 'react';
+import React, { type ReactNode } from 'react';
 
 interface MainLayoutProps {
     header: ReactNode;
@@ -15,7 +15,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ header, footer, children }) => 
             </Head>
             {header}
             <main>{children}</main>
-            {footer && {footer}}
+            {footer && { footer }}
         </>
     );
 };
