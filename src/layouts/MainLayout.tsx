@@ -15,7 +15,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ header, footer, children }) => 
             </Head>
             {header}
             <main>{children}</main>
-            {footer && { footer }}
+            {footer === true && { footer }}
         </>
     );
 };
