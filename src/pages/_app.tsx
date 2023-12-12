@@ -6,8 +6,8 @@ import '@/styles/global.scss';
 const TheApp = ({ Component, pageProps }: AppProps): JSX.Element => <Component {...pageProps} />;
 
 TheApp.propTypes = {
-    Component: PropTypes.elementType.isRequired,
-    pageProps: PropTypes.object.isRequired,
+  Component: PropTypes.elementType.isRequired,
+  pageProps: PropTypes.object.isRequired,
 };
 
 export default TheApp;
