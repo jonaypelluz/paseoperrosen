@@ -1,10 +1,10 @@
-import { FC } from 'react';
+import type { FunctionComponent } from 'react';
 
 interface HeaderProps {
     locationName: string;
-};
+}
 
-const Header: FC<HeaderProps> = ({ locationName }) => {
+const Header: FunctionComponent<HeaderProps> = ({ locationName }) => {
     return (
         <header>
             <h1>
