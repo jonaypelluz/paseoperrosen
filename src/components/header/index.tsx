@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-type HeaderProps = {
+interface HeaderProps {
     locationName: string;
 };
 
