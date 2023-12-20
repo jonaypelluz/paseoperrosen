@@ -1,10 +1,14 @@
-import { type FC } from 'react';
+import { FC } from 'react';
 
-const Header: FC = () => {
+type HeaderProps = {
+    locationName: string;
+};
+
+const Header: FC<HeaderProps> = ({ locationName }) => {
     return (
         <header>
             <h1>
-                Paseo perros en <span>Vacarisses</span>
+                Paseo perros en <span>{locationName}</span>
             </h1>
             <img
                 className="main-image"

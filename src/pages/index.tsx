@@ -1,7 +1,13 @@
+import Header from '@/components/header';
+import MainLayout from '@/layouts/MainLayout';
 import { type NextPage } from 'next';
 
 const Home: NextPage = () => {
-    return <h1>Hello!</h1>;
+    return (
+        <MainLayout header={<Header locationName="..." />}>
+            <h1>paseoperrosen.com</h1>
+        </MainLayout>
+    );
 };
 
 export default Home;

@@ -5,7 +5,6 @@ const nextConfig = {
     loader: 'default',
     unoptimized: true,
   },
-
   basePath: '/paseoperrosen',
   trailingSlash: true,
   async redirects() {
