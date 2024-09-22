@@ -20,22 +20,39 @@ body {
   background: url('/images/vacarisses.jpg') no-repeat;
   background-position: bottom;
   background-size: cover;
-  height: 100vh;
-  overflow-y: hidden;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+
+    &:hover, &:focus {
+        color: #8ECAF9;
+    }
+
+    &:visited {
+        color: #000;
+    }
+}
+
+ul, ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 main {
+  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 
 h1 {
   line-height: 0.8;
   font-size: 25px;
-  font-style: italic;
-  text-align: right;
 
   span {
     font-family: map-get($title-font, family);
@@ -49,13 +66,62 @@ h1 {
 
 header {
   text-align: right;
-  padding-bottom: 10%;
 
   .main-image {
     width: 100%;
     height: auto;
     max-width: 200px;
   }
+
+  nav {
+    ul {
+        display: flex;
+
+        li {
+            &:not(:last-child)::after {
+                content: '|';
+            }
+
+            a {
+                font-size: 14px;
+                padding: 5px 10px;
+                transition: color 0.3s;
+            }
+        }
+    }
+  }
+}
+
+footer {
+    padding: 20px 0;
+    font-size: 16px;
+    color: #fff;
+
+    a {
+        color: #fff;
+
+        &:visited {
+            color: #fff;
+        }
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    .powered-by {
+        white-space: nowrap;
+        margin: 0;
+    }
 }
 
 section {
@@ -75,11 +141,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    a {
-      color: #000;
-      text-decoration: none;
-    }
   }
 
   img {
@@ -95,4 +156,92 @@ section {
     max-width: 30px;
     width: 100%;
   }
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+    padding: 24px;
+    background-color: #fff;
+    line-height: 1.2;
+    box-sizing: border-box;
+    width: 100%;
+    flex: 1;
+
+    ul, ol {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .posts {
+        padding-left: 0;
+        list-style-type: none;
+    }
+}
+
+.breadcrumb {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    padding: 0;
+    margin-bottom: 12px;
+
+    ol {
+        display: flex;
+
+        li {
+            margin-right: 8px;
+    
+            &:not(:last-child):after {
+                content: ">";
+                margin-left: 8px;
+            }
+        }
+    }
+
+}
+
+#cookieConsent {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 250px;
+
+        .accept,
+        .decline {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .decline {
+            background-color: #999;
+        }
+    }
 }
