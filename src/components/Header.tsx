@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import type { FunctionComponent } from 'react';
 
@@ -25,7 +26,7 @@ const Header: FunctionComponent<HeaderProps> = ({ locationName }) => {
                 Paseo perros en <span>{locationName ?? '.com'}</span>
             </h1>
             {locationName !== null && locationName !== undefined && (
-                <img
+                <Image
                     className="main-image"
                     width="300"
                     height="201"

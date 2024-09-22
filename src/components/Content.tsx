@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { type FC } from 'react';
 
 const Content: FC = () => {
@@ -5,7 +6,7 @@ const Content: FC = () => {
         <section>
             <h2>Paseo perros en Vacarisses</h2>
             <p>
-                <img alt="Jonay Pelluz" width="130" height="113" src="/images/jonay-pelluz.jpg" />
+                <Image alt="Jonay Pelluz" width="130" height="113" src="/images/jonay-pelluz.jpg" />
                 Me llamo Jonay y vivo, hace unos años, en Vacarisses, Torrablanca I. Tengo dos
                 perros y me dedico a pasearlos por los montes de alrededor, si está interesado en
                 que pasee al suyo no dude en contactarme.
