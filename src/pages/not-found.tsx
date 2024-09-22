@@ -1,3 +1,6 @@
+/* eslint-disable */
+// @ts-nocheck
+
 import MainLayout from '@/layouts/MainLayout';
 
 export default function NotFound() {

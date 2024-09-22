@@ -8,7 +8,7 @@ const CustomPages: NextPage = () => {
     const router = useRouter();
     const { slug } = router.query;
 
-    if (!slug) {
+    if (slug === '' || (Array.isArray(slug) && slug.length === 0)) {
         return <MainLayout>Cargando...</MainLayout>;
     }
 
