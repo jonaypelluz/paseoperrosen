@@ -23,7 +23,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18.16'
+          node-version: '20.17'
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
