@@ -20,8 +20,8 @@ const posts: Record<string, { content: string; title: string }> = {
             <p><b>Prevención de enfermedades:</b> Caminar regularmente puede ayudar a prevenir ciertos problemas de salud en los perros, como la hipertensión, enfermedades metabólicas y trastornos digestivos.</p>
             <p><b>Mejora de la salud mental:</b> El ejercicio físico también combate el aburrimiento y el estrés, lo que evita comportamientos destructivos en casa. Un perro más relajado y feliz tiene una mejor calidad de vida.</p>
             <p>Mantener una rutina de paseos y ejercicio es esencial para el bienestar físico general del perro.</p>`,
-        title: 'El bienestar físico del perro'
-    }
+        title: 'El bienestar físico del perro',
+    },
 };
 
 export default posts;
