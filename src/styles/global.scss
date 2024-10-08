@@ -187,8 +187,13 @@ section {
     }
 
     .posts {
-        padding-left: 0;
+        padding-left: 18px;
         list-style-type: none;
+
+        li {
+            list-style: circle;
+            margin-bottom: 5px;
+        }
     }
 }
 
