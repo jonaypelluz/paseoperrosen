@@ -20,7 +20,7 @@ const Blog: NextPage<BlogProps> = ({ posts }) => {
             <ul className="posts">
                 {posts.map((post) => (
                     <li key={post.slug}>
-                        <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                        <Link href={`/blog/${post.slug}/`}>{post.title}</Link>
                     </li>
                 ))}
             </ul>

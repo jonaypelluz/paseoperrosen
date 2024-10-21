@@ -25,8 +25,8 @@ const Footer: FC = () => {
         <footer>
             <div>
                 <nav>
-                    <Link href="/politica-de-privacidad">Política de privacidad</Link>
-                    <Link href="/politica-de-cookies">Política de cookies</Link>
+                    <Link href="/politica-de-privacidad/">Política de privacidad</Link>
+                    <Link href="/politica-de-cookies/">Política de cookies</Link>
                 </nav>
                 <div className="powered-by">powered by jonaypelluz</div>
             </div>

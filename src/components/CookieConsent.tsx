@@ -28,7 +28,7 @@ const CookieConsent: React.FC<{ setShowModal: React.Dispatch<React.SetStateActio
             <p>
                 Este sitio web utiliza cookies para analizar el tráfico. Al continuar navegando,
                 aceptas su uso.
-                <Link href="/politica-de-cookies">Más información</Link>
+                <Link href="/politica-de-cookies/">Más información</Link>
             </p>
             <div>
                 <button onClick={declineCookies} className="decline">
